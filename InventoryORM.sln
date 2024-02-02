@@ -1,0 +1,31 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.8.34309.116
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "InventoryORM", "InventoryORM\InventoryORM.csproj", "{A87E06F1-67E1-4EB1-A1FC-FE3B063646FE}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "InventoryORM.Test", "InventoryORM.Test\InventoryORM.Test.csproj", "{24D9C053-5ABE-4CC1-8F90-7FBF1569B935}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{A87E06F1-67E1-4EB1-A1FC-FE3B063646FE}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A87E06F1-67E1-4EB1-A1FC-FE3B063646FE}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A87E06F1-67E1-4EB1-A1FC-FE3B063646FE}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A87E06F1-67E1-4EB1-A1FC-FE3B063646FE}.Release|Any CPU.Build.0 = Release|Any CPU
+		{24D9C053-5ABE-4CC1-8F90-7FBF1569B935}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{24D9C053-5ABE-4CC1-8F90-7FBF1569B935}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{24D9C053-5ABE-4CC1-8F90-7FBF1569B935}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{24D9C053-5ABE-4CC1-8F90-7FBF1569B935}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {DBF274F5-64AA-448D-9A2C-D11275D8CE7C}
+	EndGlobalSection
+EndGlobal
