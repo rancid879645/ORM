@@ -1,10 +1,14 @@
-﻿using System;
+﻿using InventoryORM.Model;
 using System.Collections.Generic;
-using System.Text;
 
 namespace InventoryORM.Data.Interface
 {
-    internal interface IProductRepository
+    public interface IProductRepository
     {
+        void CreateProduct(Product product);
+        void UpdateProduct(Product product);
+        void DeleteProduct(int id);
+        List<Product> GetProducts(int? id = null);
+
     }
 }
