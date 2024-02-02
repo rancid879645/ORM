@@ -9,7 +9,7 @@ using Microsoft.Data.SqlClient;
 
 namespace InventoryORM.Data.Implementation
 {
-    public class OrderRepository:IOrderRepository
+    public class OrderRepository : IOrderRepository
     {
         private readonly string _connectionString = "Data Source=EPCOBOGW0669\\SQLEXPRESS;Initial Catalog=Inventory;Integrated Security=True;";
 
@@ -53,17 +53,22 @@ namespace InventoryORM.Data.Implementation
             }
         }
 
-        public void DeleteOrder(int id)
+        public void DeleteOrder(FilterOrder filterOrder)
         {
             using (var connection = new SqlConnection(_connectionString))
             {
                 connection.Open();
+                var parameters = new
+                {
+                    Month = filterOrder.Month,
+                    Year = filterOrder.Year,
+                    StatusId = filterOrder.StatusId,
+                    ProductId = filterOrder.ProductId,
+                    OrderId = filterOrder.OrderId
+                };
                 connection.Execute(
                     "DeleteOrder",
-                    new
-                    {
-                        OrderId = id
-                    },
+                    parameters,
                     commandType: CommandType.StoredProcedure
                     );
             }
